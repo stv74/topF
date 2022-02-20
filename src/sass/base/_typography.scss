@@ -1,9 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;900&display=swap');
 
 body {
-	color: $text-color;
+	color: $second-color;
 	font-family: $text-font-stack;
 	font-size: 1.0625rem;
 	font-weight: 300;
 	line-height: 1.875;
+}
+
+a {
+	color: $main-color;
 }

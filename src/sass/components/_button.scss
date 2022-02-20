@@ -1,3 +1,27 @@
-// -----------------------------------------------------------------------------
-// This file contains all styles related to the button component.
-// -----------------------------------------------------------------------------
+.btn {
+	display: block;
+	width: 9.2308em;
+	font-size: 0.8125rem;
+	line-height: 2.9231;
+	font-weight: 400;
+	text-align: center;
+	background-color: $color-btn;
+}
+
+.btn_topmenu {
+	width: 12.75em;
+	height: 3.1667em;
+	background-color: #e8d8b6;
+	text-transform: uppercase;
+	color: $second-color;
+	font-size: 0.75rem;
+	line-height: 3.1667;
+}
+
+.btn_reg {
+	width: 11.7693em;
+	line-height: 3.2308em;
+	background-color: $color-title;
+	text-transform: uppercase;
+	color: $second-color;
+}

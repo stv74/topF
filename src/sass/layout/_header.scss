@@ -1,3 +1,41 @@
-// -----------------------------------------------------------------------------
-// This file contains all styles related to the header of the site/application.
-// -----------------------------------------------------------------------------
+.topmenu {
+	padding: 0.4706em 0 0.5883em 0;
+	background-color: $second-color;
+	.container {
+		display: flex;
+		justify-content: space-between;
+		a {
+			flex-shrink: 0;
+		}
+	}
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		font-size: 0.9375rem;
+		line-height: 2.3334;
+		align-items: center;
+	}
+	&__item {
+		border-right: 1px solid rgba(50, 50, 50, 0.1);
+		padding-right: 1.3333em;
+		margin-right: 1.3333em;
+		&:last-child {
+			border: none;
+		}
+	}
+}
+
+.subheader {
+	padding: 0.8824em 0;
+	.container {
+		display: flex;
+		justify-content: start;
+		align-items: center;
+	}
+	&__menu {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 auto 0 2.5882em;
+		color: $second-color;
+	}
+}
