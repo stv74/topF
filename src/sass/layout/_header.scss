@@ -16,11 +16,26 @@
 		align-items: center;
 	}
 	&__item {
-		border-right: 1px solid rgba(50, 50, 50, 0.1);
+		position: relative;
 		padding-right: 1.3333em;
 		margin-right: 1.3333em;
+		border-right: 1px solid rgba(50, 50, 50, 0.1);
 		&:last-child {
 			border: none;
+		}
+	}
+	&__dropdown {
+		position: absolute;
+		width: 19.667em;
+		line-height: 3.2;
+		background-color: $main-color;
+		border: 1px solid $color-dropdown;
+		&-item {
+			margin: 0 0.8em;
+			border-bottom: 1px solid $color-dropdown;
+			a {
+				color: $second-color;
+			}
 		}
 	}
 }
@@ -32,10 +47,33 @@
 		justify-content: start;
 		align-items: center;
 	}
+	&__logo {
+		line-height: 1;
+		width: 165px;
+		img {
+			width: 100%;
+		}
+	}
 	&__menu {
 		display: flex;
-		flex-wrap: wrap;
-		margin: 0 auto 0 2.5882em;
-		color: $second-color;
+		flex: 1;
+		align-items: center;
+		justify-content: space-between;
+		margin-left: 2.9334em;
+		font-size: 0.9375rem;
+		&-list {
+			display: flex;
+		}
+		&-item {
+			margin-right: 33px;
+			a {
+				display: flex;
+				align-items: center;
+				color: $second-color;
+				img {
+					margin-right: 12px;
+				}
+			}
+		}
 	}
 }
