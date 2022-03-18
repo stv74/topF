@@ -1,0 +1,54 @@
+.promo {
+	height: 25.882em;
+	background-image: linear-gradient(rgba(50, 50, 50, 0.47), rgba(50, 50, 50, 0.47)),
+		url('../images/hero.jpg');
+	background-position: center;
+	background-size: cover;
+	padding-top: 7.235em;
+	.container {
+		display: flex;
+		justify-content: end;
+	}
+	&__slider {
+		display: flex;
+		max-width: 25.118em;
+		height: 10.529em;
+		border: 1px solid $main-color;
+		margin-right: 2.235em;
+		flex-grow: 1;
+	}
+	&__slide {
+		display: flex;
+		width: calc(100% - 1.176em);
+		height: calc(100% - 1.176em);
+		background-color: #f2eeec;
+		margin: auto;
+		align-items: center;
+		padding: 0 1.176em 0 1.176em;
+		&-date {
+			display: flex;
+			width: 6.176em;
+			height: 7.529em;
+			background-color: $main-color;
+			border: 1px solid $color-title;
+			color: $color-title;
+			font-weight: 900;
+			text-transform: uppercase;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+		}
+		&-day {
+			font-size: 1.8125rem;
+			line-height: 0.69;
+		}
+		&-month {
+			font-size: 1.125rem;
+			line-height: 1.222;
+		}
+		&-year {
+			font-size: 2.1875rem;
+			line-height: 1.5217;
+		}
+	}
+}
