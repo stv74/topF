@@ -1,0 +1,60 @@
+.advantages {
+	padding: 3.882em 0 2.882em 0;
+	&__text {
+		text-align: justify;
+	}
+	&__wrapper {
+		margin-top: 3.4118em;
+		display: flex;
+		justify-content: space-between;
+	}
+	&__item {
+		width: 21.176em;
+	}
+	&__icon {
+		width: 10em;
+		height: 10em;
+		border: 1px solid $color-title;
+		border-radius: 100%;
+		display: flex;
+		margin-left: auto;
+		margin-right: auto;
+		img {
+			margin: auto;
+		}
+	}
+	&__title {
+		margin-top: 1.588em;
+		font-family: Roboto;
+		font-size: 1.0625rem;
+		font-weight: 500;
+		line-height: 1.412;
+		text-transform: uppercase;
+		text-align: center;
+	}
+	&__descr {
+		margin-top: 1.3333em;
+		font-size: 0.9375rem;
+		line-height: 1.6;
+		text-align: justify;
+	}
+	&__btn {
+		margin: 1.7692em auto 0 auto;
+	}
+	&__sign {
+		margin-top: 1.4545em;
+		font-size: 0.6875rem;
+		line-height: 2.1818;
+		font-weight: 400;
+		color: #919191;
+		text-align: center;
+	}
+	&__buttons {
+		margin-top: 2.294em;
+		display: flex;
+		justify-content: center;
+	}
+	&__subscr {
+		margin-left: 1.154em;
+	}
+}
