@@ -1,0 +1,80 @@
+.reviews {
+	padding: 3.1765em 0 3.5882em 0;
+	background-color: $color-section;
+	&__slider {
+		position: relative;
+		margin-top: 2.3529em;
+		.slick-next,
+		.slick-prev {
+			position: absolute;
+			background-color: transparent;
+			border: none;
+			left: -30px;
+			top: 50%;
+			transform: translateY(-50%);
+			img {
+				width: 12px;
+				height: 47px;
+			}
+		}
+		.slick-next {
+			right: -30px;
+			left: auto;
+		}
+	}
+	&__slide {
+		position: relative;
+		display: flex !important;
+		&:nth-child(2n) {
+			justify-content: end;
+		}
+	}
+	&__img {
+		width: 7.1176em;
+		height: 7.1176em;
+		flex-shrink: 0;
+		border: 2px solid $main-color;
+		border-radius: 100%;
+		object-fit: cover;
+	}
+	&__wrap {
+		width: 22.94em;
+		height: 14.412em;
+		background-color: $main-color;
+		margin-left: 2em;
+		padding: 1.5294em 1.5882em 1.7647em 1.7647em;
+		overflow: hidden;
+		flex-shrink: 0;
+		&::before {
+			content: '';
+			position: absolute;
+			width: 0;
+			height: 0;
+			border-top: 20px solid transparent;
+			border-right: 20px solid $main-color;
+			border-bottom: 20px solid transparent;
+			left: 8em;
+			top: 2.353em;
+		}
+	}
+	&__name {
+		font-weight: 500;
+		line-height: 1;
+	}
+	&__date {
+		margin-top: 1.2222em;
+		width: 13.222em;
+		background-color: $second-color;
+		opacity: 0.5;
+		font-size: 0.5625rem;
+		line-height: 3.222;
+		color: $main-color;
+		text-align: center;
+	}
+	&__text {
+		font-size: 0.875rem;
+		line-height: 1.5714;
+		text-align: justify;
+		margin-top: 0.786em;
+	}
+}

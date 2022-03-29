@@ -1,0 +1,25 @@
+.clients {
+	padding: 2.588em 0 4.118em 0;
+	background-color: $color-section;
+	&__slider {
+		margin-top: 1.941em;
+		position: relative;
+		.slick-next,
+		.slick-prev {
+			position: absolute;
+			background-color: transparent;
+			border: none;
+			left: -30px;
+			top: 50%;
+			transform: translateY(-50%);
+			img {
+				width: 12px;
+				height: 47px;
+			}
+		}
+		.slick-next {
+			right: -30px;
+			left: auto;
+		}
+	}
+}

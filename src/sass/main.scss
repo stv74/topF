@@ -18,10 +18,14 @@
 @import 'layout/header';
 @import 'layout/promo';
 @import 'layout/advantages';
+@import 'layout/reviews';
+@import 'layout/video';
+@import 'layout/clients';
 @import 'layout/footer';
 
 // 5. Components
 @import 'components/button';
+@import 'components/title';
 
 // 6. Page-specific styles
 @import 'pages/home';
