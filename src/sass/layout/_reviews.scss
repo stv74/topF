@@ -21,13 +21,18 @@
 			right: -30px;
 			left: auto;
 		}
+		// .slick-list {
+		// 	margin-left: -2.8235em;
+		// 	margin-right: -2.8235em;
+		// }
+		.slick-slide {
+			margin-left: 24px;
+			margin-right: 24px;
+		}
 	}
 	&__slide {
 		position: relative;
 		display: flex !important;
-		&:nth-child(2n) {
-			justify-content: end;
-		}
 	}
 	&__img {
 		width: 7.1176em;
