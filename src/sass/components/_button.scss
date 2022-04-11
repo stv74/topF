@@ -28,4 +28,15 @@
 
 .btn_subscr {
 	background-color: $second-color;
+	color: $main-color;
+	cursor: pointer;
+}
+
+.btn_modal {
+	width: 9.9231em;
+	height: 3.2308em;
+	background-color: $color-title;
+	text-transform: uppercase;
+	color: $main-color;
+	cursor: pointer;
 }

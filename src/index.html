@@ -41,12 +41,12 @@
 	</head>
 	<body>
 		<!-- Header -->
-		<header>
+		<header id="up">
 			<nav class="topmenu">
 				<div class="container">
 					<ul class="topmenu__list">
 						<li class="topmenu__item">
-							<a href="#" class="topmenu__link">Sponsors</a>
+							<a href="sponsors.html" class="topmenu__link">Sponsors</a>
 							<ul class="topmenu__dropdown">
 								<li class="topmenu__dropdown-item">
 									<a href="#" class="topmenu__dropdown-link">General Sponsor</a>
@@ -238,7 +238,12 @@
 				</div>
 				<div class="advantages__buttons">
 					<a href="#" class="btn btn_reg">Register now</a>
-					<a href="#" class="btn btn_reg btn_subscr advantages__subscr">Subscribe</a>
+					<button
+						data-modal="subscribe"
+						class="btn btn_reg btn_subscr advantages__subscr"
+					>
+						Subscribe
+					</button>
 				</div>
 			</div>
 		</section>
@@ -395,6 +400,29 @@
 
 		<!-- / Footer -->
 
+		<!-- Modal and overlay -->
+		<div class="overlay">
+			<div class="modal" id="subscribe">
+				<div class="modal__close">&times;</div>
+				<div class="modal__subtitle">Subscribe</div>
+				<div class="modal__descr">
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+				</div>
+				<form class="subscribe-form" action="#">
+					<input name="name" placeholder="Name and surname" type="text" />
+					<input name="company" placeholder="Company name" type="text" />
+					<input name="email" placeholder="E-mail" type="email" />
+
+					<button class="btn btn_modal">Subscribe</button>
+				</form>
+			</div>
+		</div>
+		<!-- / Modal and overlay -->
+
+		<!-- PageUp -->
+		<a href="#up" class="pageup">
+			<img src="icons/buttonUp.png" alt="up" />
+		</a>
 		<script src="js/script.min.js"></script>
 	</body>
 </html>
