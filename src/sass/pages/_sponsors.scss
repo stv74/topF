@@ -1,0 +1,21 @@
+.sponsors {
+    padding: 2.941em 0 0.1765em 0;
+    &__form {
+        margin-top: 2.3529em;
+    }
+    &__wrapper {
+        margin-top: 2.7647em;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 50em;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    &__card {
+        margin: 0 1.647em 3.8235em 0;    
+        &:nth-child(3n) {
+            margin-right: 0;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+.speakers {
+    padding: 2.941em 0 1.1176em 0;
+    &__form {
+        margin-top: 2.7059em;
+    }
+    &__wrapper {
+        margin-top: 2.2941em;
+        display: flex;
+        flex-wrap: wrap;
+    }    
+    &__card {
+        margin: 0 1.647em 3em 0;    
+        &:nth-child(4n+4) {
+            margin-right: 0;
+        }
+    }
+}

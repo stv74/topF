@@ -28,9 +28,12 @@
 @import 'components/title';
 @import 'components/pageup';
 @import 'components/modal';
+@import 'components/partners';
+@import 'components/select';
 @import 'components/card';
 
 // 6. Page-specific styles
 @import 'pages/home';
-@import 'pages/partners';
-@import 'pages/partners2';
+@import 'pages/sponsors';
+@import 'pages/exhibitors';
+@import 'pages/speakers';
