@@ -1,0 +1,17 @@
+.media {
+    padding: 2.941em 0 3.5294em 0;
+    &__wrapper {
+        margin-top: 1.4706em;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__card {
+        margin: 1.2353em 1.647em 1.9412em 0;
+        &:nth-child(3n) {
+            margin-right: 0;
+        }
+    }
+    &__btn {
+        margin: 0 auto;
+    }
+}

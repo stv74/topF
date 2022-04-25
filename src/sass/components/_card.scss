@@ -15,6 +15,13 @@
         text-transform: uppercase;
         text-align: center;
         margin-top: 1.2353em;
+        a {
+            color: $second-color;
+            &:hover {
+                color: $color-title;
+                text-decoration: underline;
+            }
+        }
     }
     &__text {
         font-size: 0.9375rem;
@@ -50,9 +57,16 @@
                 outline: 1px solid #f3ebda;
             }
         }
+        &_media {
+            height: 12.9412em;
+            margin-top: 0;
+        }
     }    
 }
 
+.card_media {
+    width: 21.2353em;
+}
 
 
 
