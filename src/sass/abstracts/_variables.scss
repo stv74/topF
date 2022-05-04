@@ -1,7 +1,7 @@
 // Шрифт
 $text-font-stack: 'Roboto', sans-serif;
 
-// Главный цвет (после белого)
+// Главный цвет 
 $main-color: #fff;
 
 // Цвет текста и заголовков
@@ -13,6 +13,9 @@ $color-title: #c99c47;
 // Цвет основной кнопки
 $color-btn: #d4c198;
 
+// Цвет кнопок отправки формы
+$color-form-btn: rgba(201, 156, 71);
+
 // Цвет рамок выпадающего меню
 $color-dropdown: #d6d6d6;
 
@@ -20,7 +23,11 @@ $color-dropdown: #d6d6d6;
 $color-menu-active: #000000;
 
 // Фоновый цвет некоторых секций сайта
-$color-section: #e8d8b6;
+// $color-section: #e8d8b6;
+$color-section: rgba(232, 216, 182, .3);
+
+// Цвет надписей в формах
+$color-form-text: #606060;
 
 // Ширина контейнера
 $max-width: 73.125rem;

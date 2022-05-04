@@ -1,0 +1,26 @@
+.map {
+    padding: 1.9412em 0 4.1176em 0;
+    &__flex {
+        display: flex;
+    }
+    &__wrapper {
+        margin: 0.47em 0 0 1.7059em;
+    }
+    &__contact {
+        font-size: 0.9375rem;
+        font-weight: 300;
+        line-height: 1.4;
+        margin-bottom: 1.866em;
+        &-title {
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+        &-name {
+            font-weight: 500;
+        }
+        a {
+            color: $color-title;
+            text-decoration: underline;
+        }
+    }
+}

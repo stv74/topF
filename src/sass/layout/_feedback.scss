@@ -1,0 +1,66 @@
+.feedback {
+    padding: 2.8235em 0 2.5882em 0;
+    background-color: $color-section;
+    &__wrapper {
+        display: grid;
+        margin-top: 0.47em;
+        grid-template-columns: 32.706em auto;
+        column-gap: 1.65em;
+    }
+    &__form {
+        display: grid;
+        grid-template-rows: 8.5882em 4.7647em 2.5294em;
+        row-gap: 0.8824em;        
+        label {
+            font-size: 14px;
+            font-weight: 500;
+            align-self: center;
+            color: $color-form-text;
+        }
+    }
+    &__textarea {
+        display: grid;
+        grid-template-rows: 1.7647em 6.8235em; 
+        textarea {
+            resize: none;
+            padding: 0.5em;
+            font-size: 13px;
+            font-weight: 300;
+        }       
+    }
+    &__wrap {
+        display: grid;
+        grid-template-columns: repeat(2, 15.9412em);
+        grid-template-rows: 1.7647em 3em;
+        column-gap: 0.8235em;
+        label {
+            grid-column: 1 / 3;
+        }
+    }
+    &__input {
+        input {
+            width: 100%;
+            height: 100%;
+            font-size: 0.75rem;
+            padding-left: 1.25em;
+            color: $color-form-text;
+        }
+    }
+    &__btn {
+        justify-self: end;
+    }
+    &__contact {
+        margin-top: 1.67em;
+        font-size: 0.8824em;
+        font-weight: 400;
+        span {
+            font-size: 1.5em;
+            font-weight: 500;
+        }
+        a {
+            color: $color-title;
+            text-transform: uppercase;
+            text-decoration: underline;
+        }
+    }
+}
