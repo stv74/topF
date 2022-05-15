@@ -20,18 +20,27 @@
             right: 12px;
             z-index: -1;
         }
+        &_reg {
+            &::before {
+                top: 24px;
+            }
+        }
     }    
     &__feeld {
         margin-top: 1.5714em;
         padding-left: 1.2857em;
         width: 32.147em;
-        height: 3.571em;
-        border: 1px solid #e8d8b6;
+        height: 3.7857em;
+        border: 1px solid $color-form-border;
         font-size: 0.875rem;
         font-weight: 300;
         line-height: 2;
-        color: #606060;
+        color: $color-form-text;
         appearance: none;
         background-color: transparent;
+        &_reg {
+            width: 31.4286em;
+            margin-top: 0;
+        }
     }
 }
