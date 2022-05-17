@@ -1,0 +1,12 @@
+.partners {
+    &__picture {
+        display: block;
+        margin: 1.6471em auto 2.1176em auto;
+        width: 100%;
+        height: auto;
+        max-width: 19.4118em;
+        border: 20px solid $main-color;
+        border-radius: 50%;
+        outline: 1px solid #f3ebda;        
+    }
+}
