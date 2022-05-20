@@ -1,0 +1,45 @@
+.event {
+    padding: 2.8823em 0 3.8824em 0;
+    &__article {
+        min-height: 16.5625em;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1rem;
+        border-bottom: 1px solid $color-dropdown;
+        &:nth-child(2) {
+            margin-top: 1.75em;
+        }
+        &:last-child {
+            border: none;
+        }
+    }
+    &__img {
+        height: 13.75em;
+        width: 22.5em;
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    &__prev {
+        flex: 0 1 46.875em;
+        &-title {
+            font-size: 1.125rem;
+            line-height: 1.2;
+            text-transform: uppercase;
+        }
+        &-subtitle {
+            font-size: 1.0625rem;
+            font-weight: 400;
+            line-height: 1.2;
+            color: $color-title;
+            margin-top: 6px;
+        }
+        &-descr {
+            line-height: 1.3;
+            margin: 6px 0 15px 0;
+        }
+    }
+}

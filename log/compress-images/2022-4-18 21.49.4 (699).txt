@@ -1,0 +1,8 @@
+File from: [src/img-src/articles/sold_out.png]
+
+File to: [src/images/articles/sold_out.png]
+
+Compression algorithm: [pngquant]
+
+Description: Error: Command failed: D:\Projects\Practice\Topforum\node_modules\pngquant-bin\vendor\pngquant.exe --quality=75-100 -o src/images/articles/sold_out.png src/img-src/articles/sold_out.png
+  error: failed writing image to src/images/articles/sold_out.png (16)
