@@ -17,6 +17,9 @@
 	font-size: 0.75rem;
 	line-height: 3.1667;
 	flex-shrink: 0;
+	@media (max-width: 36.125em) {
+		font-size: 0.5625rem;
+	} 
 }
 
 .btn_reg {
@@ -24,6 +27,9 @@
 	line-height: 3.2308em;
 	background-color: $color-title;
 	text-transform: uppercase;
+	@media (max-width: 36.125em) {
+		font-size: 0.625rem;
+	}
 }
 
 .btn_subscr {

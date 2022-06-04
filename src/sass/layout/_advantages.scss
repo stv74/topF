@@ -2,14 +2,50 @@
 	padding: 3.882em 0 2.882em 0;
 	&__text {
 		text-align: justify;
+		@media (max-width: 75em) {
+			width: 55.588em;
+			margin: 0  auto;
+		}
+		@media (max-width: 62em) {
+			width: 42.471em;
+		}
+		@media (max-width: 48em) {
+			width: 100%;
+			font-size: 1rem;
+		}
 	}
 	&__wrapper {
 		margin-top: 3.4118em;
 		display: flex;
 		justify-content: space-between;
+		@media (max-width: 75em) {
+			width: 55.588em;
+			margin: 3.4118em auto 0 auto;
+		}
+		@media (max-width: 62em) {
+			width: 42.471em;
+		}
+		@media (max-width: 48em) {
+			flex-direction: column;
+			width: 21.176em;
+			margin: 3.4118em auto 0 auto;
+		}
+		@media (max-width: 36.125em) {
+			width: 16.0588em;
+		}
 	}
 	&__item {
-		width: 21.176em;
+		flex: 0 0 21.176em;
+		padding: 0 0.588em;
+		@media (max-width: 75em) {
+			flex: 0 0 18.176em;
+		}
+		@media (max-width: 62em) {
+			flex: 0 0 13.176em;
+		}
+		@media (max-width: 48em) {
+			margin-bottom: 2.2941em;
+		}
 	}
 	&__icon {
 		width: 10em;
@@ -22,6 +58,10 @@
 		img {
 			margin: auto;
 		}
+		@media (max-width: 62em) {
+			width: 8em;
+			height: 8em;
+		}
 	}
 	&__title {
 		margin-top: 1.588em;
@@ -31,12 +71,30 @@
 		line-height: 1.412;
 		text-transform: uppercase;
 		text-align: center;
+		@media (max-width: 78.125em) {
+			min-height: 2.824em;
+		}
+		@media (max-width: 48em) {
+			font-size: 1rem;
+			min-height: auto;
+		}
 	}
 	&__descr {
+		height: 168px;
 		margin-top: 1.3333em;
 		font-size: 0.9375rem;
 		line-height: 1.6;
 		text-align: justify;
+		overflow: hidden;
+		@media (max-width: 75em) {
+			height: 192px;
+		}
+		@media (max-width: 62em) {
+			height: 265px;
+		}
+		@media (max-width: 48em) {
+			height: auto;
+		}
 	}
 	&__btn {
 		margin: 1.7692em auto 0 auto;
@@ -53,8 +111,18 @@
 		margin-top: 2.294em;
 		display: flex;
 		justify-content: center;
+		@media (max-width: 48em) {
+			margin-top: 0;
+		}
+		@media (max-width: 26.25em) {
+			flex-direction: column;
+			align-items: center;
+		}
 	}
 	&__subscr {
 		margin-left: 1.154em;
+		@media (max-width: 26.25em) {
+			margin: 1.176em 0 0 0;
+		}
 	}
 }

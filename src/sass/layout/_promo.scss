@@ -8,40 +8,51 @@
 	.container {
 		display: flex;
 		justify-content: end;
+		@media (max-width: 48em) {
+			justify-content: center;
+		}
 	}
 	&__slider {
 		position: relative;
 		display: flex;
-		max-width: 25.118em;
-		height: 10.529em;
+		width: 25.118em;
 		border: 1px solid $main-color;
 		margin-right: 2.235em;
 		padding: 0.588em;
-		flex-grow: 1;
 		.slick-next,
 		.slick-prev {
 			position: absolute;
 			background-color: transparent;
 			border: none;
-			left: -30px;
+			left: -1.7647em;
 			top: 50%;
 			transform: translateY(-50%);
 			img {
-				width: 12px;
-				height: 47px;
+				width: 0.7059em;
+				height: 2.7647em;
+				cursor: pointer;
 			}
 		}
 		.slick-next {
-			right: -30px;
+			right: -1.7647em;
 			left: auto;
+		}
+		@media (max-width: 48em) {
+			margin-right: 0;
+		}
+		@media (max-width: 36.125em) {
+			max-width: 16.1765em; 
 		}
 	}
 	&__slide {
-		display: flex !important;
-		height: 9.353em;
+		display: flex;
+		min-height: 9.353em;
 		background-color: #f2eeec;
 		padding: 0 1.176em 0 1.176em;
 		align-items: center;
+		@media (max-width: 36.125em) {
+			padding: 0.5882em;
+		}
 		&-date {
 			display: flex;
 			width: 6.176em;
@@ -57,16 +68,30 @@
 			align-items: center;
 			justify-content: center;
 			flex-shrink: 0;
+			@media (max-width: 36.125em) {
+				width: 5.8824em;
+				height: 7.0588em;
+				margin-right: 0.8824em;
+			}
 		}
 		&-day {
-			font-size: 1.8125rem;
+			font-size: 1.8125rem;			
+			@media (max-width: 36.125em) {
+				font-size: 1.6875rem;
+			}
 		}
 		&-month {
 			font-size: 1.125rem;
 			margin: 2px 0;
+			@media (max-width: 36.125em) {
+				font-size: 1rem;
+			}
 		}
 		&-year {
 			font-size: 2.1875rem;
+			@media (max-width: 36.125em) {
+				font-size: 2.0625rem;
+			}
 		}
 		&-title {
 			font-size: 0.875rem;
@@ -75,6 +100,9 @@
 			text-transform: uppercase;
 			color: $color-title;
 			margin-bottom: 0.286em;
+			@media (max-width: 36.125em) {
+				font-size: 0.8125rem;
+			}
 		}
 		&-text {
 			height: 5.23em;
@@ -83,11 +111,18 @@
 			color: $second-color;
 			margin-bottom: 0.308em;
 			overflow: hidden;
+			@media (max-width: 36.125em) {
+				font-size: 0.75rem;
+				height: 6.4706em;
+			}
 		}
 		&-addr {
 			font-size: 0.875rem;
 			line-height: 1.214;
 			color: #757575;
+			@media (max-width: 36.125em) {
+				font-size: 0.8125rem;
+			}
 		}
 	}
 }

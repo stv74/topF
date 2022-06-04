@@ -5,4 +5,7 @@
 	color: $second-color;
 	text-transform: uppercase;
 	text-align: center;
+	@media (max-width: 36.125em) {
+		font-size: 1.375rem;
+	}
 }

@@ -1,12 +1,24 @@
 $(function () {
 	$('.promo__slider').slick({
+		autoplay: true,
+		autoplaySpeed: 5000,
 		prevArrow:
 			'<button type="button" class="slick-prev"><img src="icons/sliderArrowL_white.png"></button>',
 		nextArrow:
 			'<button type="button" class="slick-next"><img src="icons/sliderArrowR_white.png"></button>',
+		responsive: [
+			{
+				breakpoint: 768,
+				settings: {
+					arrows: false,
+				},
+			},
+		],
 	});
 
 	$('.reviews__slider').slick({
+		autoplay: true,
+		autoplaySpeed: 5000,
 		infinite: true,
 		slidesToShow: 2,
 		slidesToScroll: 2,
@@ -14,9 +26,28 @@ $(function () {
 			'<button type="button" class="slick-prev"><img src="icons/sliderArrowL.png"></button>',
 		nextArrow:
 			'<button type="button" class="slick-next"><img src="icons/sliderArrowR.png"></button>',
+		responsive: [
+			{
+				breakpoint: 1250,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+				},
+			},
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					arrows: false,
+				},
+			},
+		],
 	});
 
 	$('.clients__slider').slick({
+		autoplay: true,
+		autoplaySpeed: 5000,
 		infinite: true,
 		slidesToShow: 6,
 		slidesToScroll: 6,
@@ -24,6 +55,38 @@ $(function () {
 			'<button type="button" class="slick-prev"><img src="icons/sliderArrowL.png"></button>',
 		nextArrow:
 			'<button type="button" class="slick-next"><img src="icons/sliderArrowR.png"></button>',
+		responsive: [
+			{
+				breakpoint: 1250,
+				settings: {
+					slidesToShow: 4,
+					slidesToScroll: 4,
+				},
+			},
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 3,
+				},
+			},
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 2,
+					arrows: false,
+				},
+			},
+			{
+				breakpoint: 576,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					arrows: false,
+				},
+			},
+		],
 	});
 
 	// Smooth scroll and pageup

@@ -47,10 +47,51 @@
 		margin-right: auto;
 	}
 	&__dev {
-		opacity: 0.3;
-		font-size: 0.8125rem;
-		line-height: 1.308;
-		color: $main-color;
-		margin-right: 0.692em;
+		display: flex;
+		align-items: center;
+		&-text {
+			opacity: 0.3;
+			font-size: 0.8125rem;
+			line-height: 1.308;
+			color: $main-color;
+			margin-right: 0.692em;
+
+		}				
+ 	}
+	@media (max-width: 1250px) {
+		padding: 1.5294em 20px 2.2352em 20px;
+	}
+	@media (max-width: 650px) {
+		padding: 1.5294em 2.647em 1.47em 2.647em;
+		padding-bottom: 1.47em;
+		&__wrapper {
+			flex-direction: column;
+		}
+		&__nav {
+			height: auto;
+			padding: 0;
+			border: none;
+		}
+		&__contacts {
+			margin: 2em 0;
+			padding: 0;
+		}
+		&__sub {
+			flex-direction: column;
+		}
+		&__copy {
+			font-size: 0.75rem;
+			margin-right: 0;
+		}
+		&__dev {
+			margin-top: 1.176em;
+			&-text {
+				font-size: 0.6875rem;
+			}
+			img {
+				width: 84px;
+				height: auto;
+			}
+		}
 	}
 }
