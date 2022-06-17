@@ -7,25 +7,32 @@
 		align-items: center;
 		@media (max-width: 48em) {
 			justify-content: end;
-			height: 56px;
+			height: 3.2941em;
 		}
 	}
 	&__list {
+		position: relative;
 		display: flex;
 		flex-wrap: wrap;
 		font-size: 0.9375rem;
+		&.active {
+			left: 0;
+		}
 		@media (max-width: 48em) {
 			position: fixed;
 			flex-direction: column;
-			justify-content: center;
+			flex-wrap: nowrap;
 			width: 50%;
 			height: 100vh;
 			top: 0;
-			left: 0;
+			left: -100%;
 			z-index: 1;
 			background-color: rgba(0, 0, 0, .8);
+			transition: 0.6s all;
 			font-size: 1.0625rem;
-
+			font-weight: 400;
+			text-transform: uppercase;
+			padding: 5.88em 0 0 2.94em;
 		}
 		@media (max-width: 36.125em) {
 			width: 100%;
@@ -37,21 +44,44 @@
 			}
 		}
 	}
+	&__close {
+		display: none;
+		@media (max-width: 48em) {
+			display: block;
+			position: absolute;
+			top: 0.33em;
+			right: 0.66em;
+			color: $main-color;
+			font-size: 2.8125rem;
+			font-weight: 300;
+			line-height: 1;
+			cursor: pointer;
+		}
+	}
 	&__item {
 		position: relative;
 		margin: 0.667em 1.3333em 0.733em 0;
 		&:hover {
-			margin: 0 1.3333em 0 -1.3333em;
-			padding: 0.667em 0 0.733em 1.3333em;
-			background-color: $color-menu-active;
+			@media (min-width: 48em) {
+				margin: 0 1.3333em 0 -1.3333em;
+				padding: 0.667em 0 0.733em 1.3333em;
+				background-color: $color-menu-active;
+			}
 			.topmenu__dropdown {
 				display: block;
+				@media (max-width: 48em) {
+					display: none;
+				}
 			}
+		}
+		@media (max-width: 48em) {
+			margin: 0 0 1.176em 0;
 		}
 		&-subheader {
 			display: none;
 			@media (max-width: 48em) {
 				display: block;
+				margin-bottom: 1.176em;
 			}
 		}
 	}
@@ -85,7 +115,7 @@
 			&:hover {
 				margin: -0.067em 0 0 0;
 				padding-left: 1.6em;
-				background-color: $color-dropdown;
+				background-color: $color-dropdown;				
 			}
 			&:last-child {
 				border: none;
@@ -110,7 +140,7 @@
 	}
 	&__logo {
 		line-height: 1;
-		width: 165px;
+		width: 9.7059em;
 		img {
 			width: 100%;
 		}
@@ -132,13 +162,13 @@
 			}
 		}
 		&-item {
-			margin-right: 33px;
+			margin-right: 2.2em;
 			a {
 				display: flex;
 				align-items: center;
 				color: $second-color;
 				img {
-					margin-right: 12px;
+					margin-right: 0.8em;
 				}
 			}
 		}		
@@ -149,16 +179,21 @@
 	@media (max-width: 48em) {
 		display: block;
 		position: absolute;
-		width: 26px;
-		height: 26px;
-		top: 17px;
-		left: 15px;
+		width: 1.52em;
+		height: 1.52em;
+		top: 1em;
+		left: 0.88em;
+		cursor: pointer;
 		span {
 			display: block;
-			height: 2px;
+			height: 0.11em;
 			width: 100%;
 			background-color: #fff;
-			margin-bottom: 7px;
+			margin-bottom: 0.41em;
+		}
+		&.active {
+			visibility: hidden;
+			transition: 0.3s all;
 		}
 	}
 }

@@ -111,4 +111,17 @@ $(function () {
 	$('.modal__close').on('click', function () {
 		$('.overlay, #subscribe').fadeOut('slow');
 	});
+
+	// Mobile menu
+	const menu = $('.topmenu__list');
+	const hamburger = $('.hamburger');
+	const close = $('.topmenu__close');
+	hamburger.on('click', function () {
+		menu.addClass('active');
+		hamburger.addClass('active');
+	});
+	close.on('click', function () {
+		menu.removeClass('active');
+		hamburger.removeClass('active');
+	});
 });
