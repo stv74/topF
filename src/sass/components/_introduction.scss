@@ -2,5 +2,8 @@
     &__descr {
         margin-top: 1.294em;
         text-align: justify;
+        @media (max-width: 36.125em) {
+            font-size: 0.9375rem;
+        }
     }
 }
