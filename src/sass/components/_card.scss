@@ -66,6 +66,12 @@
 
 .card_media {
     width: 21.2353em;
+    @media (max-width: 75em) {
+        width: 20em;
+    }
+    @media (max-width: 36.125em) {
+        width: 17.0588em;
+    }
 }
 
 

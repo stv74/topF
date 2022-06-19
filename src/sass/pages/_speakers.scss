@@ -1,17 +1,52 @@
 .speakers {
     padding: 2.941em 0 1.1176em 0;
     &__form {
-        margin-top: 2.7059em;
+        margin: 2.7059em auto 0;
     }
     &__wrapper {
-        margin-top: 2.2941em;
+        margin: 2.2941em auto 0;
         display: flex;
         flex-wrap: wrap;
+        @media (max-width: 75em) {
+                width: 50em;
+            }        
+            @media (max-width: 62em) {
+                width: 32.9412em;
+            }        
+            @media (max-width: 48em) {
+                width: 16.4706em;
+                justify-content: center;
+            }
     }    
     &__card {
         margin: 0 1.647em 3em 0;    
         &:nth-child(4n+4) {
             margin-right: 0;
+        }
+        @media (max-width: 75em) {
+            &:nth-child(3n) {
+                margin-right: 0;
+            }
+
+            &:nth-child(4n+4) {
+                margin-right: 1.647em;
+            }
+        }
+
+        @media (max-width: 62em) {
+            &:nth-child(2n) {
+                margin-right: 0;
+            }
+
+            &:nth-child(2n-1) {
+                margin-right: 1.647em;
+            }
+        }
+
+        @media (max-width: 48em) {
+            &:nth-child(2n-1) {
+                margin-right: 0;
+            }
         }
     }
 }
