@@ -2,8 +2,11 @@
     padding: 2.8824em 0 2.4706em 0;
     font-size: 0.875rem;
     font-weight: 500;
+    @media (max-width: 48em) {
+        font-size: 0.75rem;
+    }
     &__panel {
-        width: 29.64em;
+        max-width: 29.64em;
         line-height: 4.2143;
         color: $color-title;
         text-align: center;
@@ -17,11 +20,14 @@
     &__arrow {
         display: block;
         margin: 0.4118em auto;
+        @media (max-width:48em) {
+            margin: 0.5em auto;
+        }
     }
     &__form {
         margin: 3em auto 0 auto;
         display: grid;
-        width: 47.858em;
+        max-width: 47.858em;
         grid-template-columns: 16.4286em 31.4286em;
         grid-template-rows: repeat(13, 3.7857em) 4.8571em;
         row-gap: 0.57em;
@@ -30,6 +36,14 @@
             height: 100%;
             border: 1px solid $color-form-border;
             padding-left: 1.2857em;
+        }
+        @media (max-width: 48em) {
+            grid-template-columns: 16.25em 29.42em;
+            justify-content: center;
+        }
+        @media (max-width: 36.125em) {
+            grid-template-columns: 24.1667em;
+            grid-template-rows: repeat(13, 1.8333em 3.7857em) 4.8571em;
         }
     }
     &__label {
@@ -51,6 +65,9 @@
                 vertical-align: middle;
                 background-color: $color-form-choice;
                 cursor: pointer;
+                @media (max-width: 48em) {
+                    font-size: 0.75rem;
+                }
             }
             &:checked {
                 + label {
@@ -66,6 +83,12 @@
                 img {
                     vertical-align: middle;
                 }
+                @media (max-width: 48em) {
+                    width: 7.1667em;
+                }
+                @media (max-width: 36.125em) {
+                    width: 5.8333em;
+                }
             }
         }
     }
@@ -74,6 +97,9 @@
         grid-column: 1 / 3;
         justify-content: space-between;
         align-self: flex-end;
+        @media (max-width: 36.125em) {
+            grid-column: 1 / 2;
+        }
     }
     &__check {
         display: flex;
@@ -109,6 +135,15 @@
                 }
             }
         }
-
+        @media (max-width: 36.125em) {
+            margin-left: 0;
+            font-size: 0.6875rem;
+            input[type="checkbox"] {
+                +label {
+                    width: 0.88em;
+                    height: 0.88em;
+                }
+            }
+        }
     }
 }

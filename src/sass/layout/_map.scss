@@ -1,10 +1,39 @@
 .map {
     padding: 1.9412em 0 4.1176em 0;
+    @media (max-width: 48em) {
+        padding-bottom: 1.7647em;
+    }
     &__flex {
         display: flex;
+        @media (max-width: 75em) {
+            justify-content: center;
+        }
+        @media (max-width: 48em) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    &__iframe {
+        height: 25.9412em;
+        width: 44.1765em;
+        @media (max-width: 75em) {
+            width: 39.4118em;
+            height: 24.1176em;
+        }
+        @media (max-width: 62em) {
+            width: 28.3529em;
+            height: 22.6471em;
+        }
+        @media (max-width: 36.125em) {
+            width: 17.0588em;
+            height: 17.6471em;
+        }
     }
     &__wrapper {
         margin: 0.47em 0 0 1.7059em;
+        @media (max-width: 48em) {
+            margin-top: 1.7647em;
+        }
     }
     &__contact {
         font-size: 0.9375rem;
@@ -21,6 +50,15 @@
         a {
             color: $color-title;
             text-decoration: underline;
+        }
+        @media (max-width: 75em) {
+            font-size: 0.875rem;
+        }
+        @media (max-width: 62em) {
+            font-size: 0.8125rem;
+        }
+        @media (max-width: 48em) {
+            font-size: 0.875rem;
         }
     }
 }

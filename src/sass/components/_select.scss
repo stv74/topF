@@ -1,5 +1,8 @@
 .select {
     max-width: 26.47em;
+    &_reg {
+        max-width: 31.4286em;
+    }
     &__title {
         font-weight: 500;
         line-height: 1;
@@ -11,16 +14,23 @@
         &::before {
             content: '';
             position: absolute;
-            width: 22px;
-            height: 8px;
+            width: 1.2941em;
+            height: 0.4706em;
             background-image: url(../icons/selectArrow.png);
-            top: 44px;
-            right: 12px;
+            top: 2.5882em;
+            right: 0.7059em;
             z-index: -1;
         }
         &_reg {
             &::before {
-                top: 24px;
+                width: 1.5714em;
+                height: 0.5714em;
+                top: 1.7143em;
+                @media (max-width: 48em) {
+                    width: 1.8333em;
+                    height: 0.6666em;
+                    top: 1.75em;
+                }
             }
         }
     }    
@@ -37,8 +47,10 @@
         appearance: none;
         background-color: transparent;
         &_reg {
-            width: 31.4286em;
             margin-top: 0;
+            @media (max-width: 48em) {
+                font-size: 0.75rem;
+            }
         }
     }
 }
