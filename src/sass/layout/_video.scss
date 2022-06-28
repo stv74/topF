@@ -1,17 +1,14 @@
 .video {
 	padding: 3.529em 0;
 	&__wrapper-out {
-		max-width: 560px;
+		max-width: 32.9412em;
 		margin: 1.47em auto 0 auto;
-	// 	display: flex;
-	// 	justify-content: center;
 	}
 	&__wrapper-in {
 		overflow: hidden;
 		position: relative;
 		padding-bottom: 56.25%;
 		height: 0;
-		// padding-top: 30px;
 		iframe,
 		object,
 		embed {

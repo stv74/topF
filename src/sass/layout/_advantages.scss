@@ -80,17 +80,17 @@
 		}
 	}
 	&__descr {
-		height: 168px;
+		height: 11.2em;
 		margin-top: 1.3333em;
 		font-size: 0.9375rem;
 		line-height: 1.6;
 		text-align: justify;
 		overflow: hidden;
 		@media (max-width: 75em) {
-			height: 192px;
+			height: 12.8em;
 		}
 		@media (max-width: 62em) {
-			height: 265px;
+			height: 17.67em;
 		}
 		@media (max-width: 48em) {
 			height: auto;
