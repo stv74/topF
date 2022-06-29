@@ -17,6 +17,10 @@
     background-color: $main-color;
     border: 2px solid $color-title;
     padding: 2.1176em 1.647em 1.8235em 1.647em;
+    @media (max-width: 36.125em) {
+        width: 17.0588em;
+        padding: 2.1176em 0.8824em 1.8235em 0.8824em;
+    }
     &__close {
         position: absolute;
         top: -0.7317em;
@@ -25,6 +29,11 @@
         line-height: 0.5;
         color: $main-color;
         cursor: pointer;
+        @media (max-width: 36.125em) {
+            color: $color-title;
+            top: 0.1951em;
+            right: 0.1951em;
+        }
     }
     &__subtitle {
         line-height: 1;
@@ -40,7 +49,7 @@
         font-weight: 300;
         line-height: 1.3333;
         text-align: center;
-    }
+    }    
 }
 
 .subscribe-form {
